@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>KNP Architecture</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="shortcut icon" href="./imgs/logo_title_red.png" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- GOOGLE FONT -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald&display=swap&subset=vietnamese"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+
+    <!-- ANIMATE CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css"
+      integrity="sha256-a2tobsqlbgLsWs7ZVUGgP5IvWZsx8bTNQpzsqCSm5mk="
+      crossorigin="anonymous"
+    />
+
+    <!-- OWL CAROUSEL 2-->
+    <link rel="stylesheet" href="./css/owl.carousel.css" />
+    <link rel="stylesheet" href="./css/owl.theme.default.css" />
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/home.css" />
+  </head>
+  <body>
+    <div class="loading">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 422.42 185">
+        <defs>
+          <style>
+            .cls-1 {
+              fill: #821b1f;
+            }
+          </style>
+        </defs>
+        <title>Loading</title>
+        <g id="Layer_2" data-name="Layer 2">
+          <g id="Layer_1-2" data-name="Layer 1">
+            <path
+              class="cls-1"
+              d="M303.54,81q0-39.33,0-78.66c0-1.93.45-2.4,2.39-2.39,18.64.09,37.28,0,55.92.09,10,0,19.88,1.12,29.4,4.49,15.67,5.55,25.39,16.54,29.39,32.53a58.63,58.63,0,0,1-3.48,39c-6.55,14.71-18.71,22.72-33.74,26.94a78.77,78.77,0,0,1-20.83,2.87c-6.42,0-12.84,0-19.26.06-1.1,0-1.86,0-1.84-1.51q.12-12.53,0-25.06c0-1.49.66-1.57,1.82-1.57,6.81,0,13.62-.16,20.42.05,16.54.5,23.83-9.9,24.77-23.61a31.94,31.94,0,0,0-2.15-15c-3.08-7.19-8.68-11.07-16.34-11.31-10.35-.33-20.72-.09-31.09-.15-1.2,0-1.6.31-1.58,1.55.07,3.48,0,7,0,10.44q0,59.86.08,119.72c0,1.92-.28,2.63-2.46,2.6-9.67-.14-19.33-.12-29,0-1.9,0-2.41-.41-2.4-2.37Q303.6,120.38,303.54,81Z"
+            />
+            <path
+              class="cls-1"
+              d="M193.76,60.71c0,33.12,0,66,.06,98.86,0,2.38-.6,2.92-2.92,2.88-9.59-.14-19.18-.1-28.77,0-1.65,0-2-.46-2-2.06q.06-78.89,0-157.77c0-1.81.54-2.12,2.2-2.11q16.24.09,32.48-.06a2.7,2.7,0,0,1,2.84,1.69q25.62,49.52,51.34,99a6.85,6.85,0,0,1,.78,3.31c0,18.56,0,37.12-.05,55.68,0,.76.74,2-.69,2.29a2.69,2.69,0,0,1-3.35-1.55q-14.54-28.55-29.26-57Q205.8,83.26,195.21,62.7C194.87,62.06,194.75,61.24,193.76,60.71Z"
+            />
+            <path
+              class="cls-1"
+              d="M148.8.66c-7.35,7.24-14.32,14-21.21,20.9Q98.47,50.67,69.37,79.8c-1.27,1.26-1.3,1.89,0,3.18q38.66,38.6,77.21,77.3c.57.57,1.38,1,1.61,2.13H135.89c-10.75,0-21.5,0-32.24,0a4.37,4.37,0,0,1-3.44-1.43Q61.34,122,22.37,83c-1.25-1.25-1.15-1.83,0-3q39-39.08,77.9-78.25A3.61,3.61,0,0,1,103.07.47c14.77,0,29.54,0,44.31,0C147.6.47,147.82.53,148.8.66Z"
+            />
+            <path
+              class="cls-1"
+              d="M253.94,81.44q0-39.2,0-78.4c0-2,.35-2.6,2.48-2.57,9.74.14,19.48.09,29.23,0,1.58,0,2.09.36,2.09,2q-.07,78.87,0,157.73c0,1.75-.46,2.2-2.19,2.18-9.82-.09-19.64-.12-29.46,0-2.08,0-2.14-.81-2.14-2.39q0-39.32,0-78.63Z"
+            />
+            <path
+              class="cls-1"
+              d="M.06,81.47C.06,55.33.09,29.2,0,3.07,0,.86.66.46,2.69.48,13.12.58,23.56.56,34,.49c1.68,0,2.37.23,2.36,2.2q-.13,28.18,0,56.36A4.14,4.14,0,0,1,35,62.29c-6,6-12,12.06-18.05,18-1,1-1,1.5,0,2.48,6,5.92,11.91,11.92,17.9,17.85a4.37,4.37,0,0,1,1.49,3.4q-.08,28.07,0,56.13c0,1.89-.56,2.27-2.33,2.25q-15.89-.12-31.78,0c-1.92,0-2.23-.62-2.23-2.35Q.1,120.78.06,81.47Z"
+            />
+            <path class="cls-1" d="M0 185 L422.42 185  Z" />
+          </g>
+        </g>
+      </svg>
+      <div class="lds-ellipsis animated fadeIn delay-3s">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <header>
+      <div class="brand-panel">
+        <img
+          src="./imgs/logo.png"
+          alt="Architecture Interior Design"
+          draggable="false"
+        />
+        <!-- <div class="brand-panel__logo"></div> -->
+        <div class="brand-panel__slide-numer">
+          <span class="brand-panel__current-number"></span>
+          <sup>
+            <span>/</span>
+            <span id="numberSlider"></span>
+          </sup>
+        </div>
+      </div>
+
+      <div class="vertical-panel">
+        <div class="vertical-panel__content">
+          <div class="vertical-panel__info">
+            <div class="text">architecture interior design</div>
+            <div class="line"></div>
+          </div>
+          <div class="vertical-panel__group-social">
+            <a href="https://www.facebook.com"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="https://www.linkedin.com"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="http://twitter.com"> <i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com">
+              <i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://www.google.com"> <i class="fab fa-google"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <nav class="nav-bar">
+        <div class="nav-bar__container">
+          <div class="nav-bar__phone">
+            <i class="fas fa-phone-volume animated infinite tada"></i
+            ><a href="tel:+84-913-795-689">+84 91 379 5689</a>
+          </div>
+          <div class="nav-bar__item">
+            <!-- <span>home</span>
+            <span>about us</span>
+            <span>projects</span>
+            <span>blog</span>
+            <span>contacts</span> -->
+            <svg viewBox="200 150 550 350">
+              <path
+                d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200"
+                class="top_bar"
+              ></path>
+              <path d="M300,320 L540,320" class="middle_bar"></path>
+              <path
+                d="M300,210 C300,210 520,210 540,210 C740,210 640,530 520,410 C440,330 300,190 300,190"
+                class="bottom_bar"
+                transform="translate(480, 320) scale(1, -1) translate(-480, -318)"
+              ></path>
+            </svg>
+          </div>
+          <div class="nav-bar__modal">
+            <div>
+              <div class="left">
+                <img
+                  src="./imgs/logo.png"
+                  alt="logo"
+                  srcset=""
+                  draggable="false"
+                />
+                <div class="group-social">
+                  <a href="https://www.facebook.com"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a href="https://www.linkedin.com"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a href="http://twitter.com">
+                    <i class="fab fa-twitter"></i
+                  ></a>
+                  <a href="https://www.instagram.com">
+                    <i class="fab fa-instagram"></i
+                  ></a>
+                  <a href="https://www.google.com">
+                    <i class="fab fa-google"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="center"><div class="vertical-line"></div></div>
+              <div class="right">
+                <div class="item">
+                  <a href="/">home</a>
+                </div>
+                <div class="item">
+                  <a href="#">about</a>
+                </div>
+                <div class="item">
+                  <a href="#" data-toggle="collapse" data-target="#projectsub"
+                    >project<i class="fas fa-angle-down"></i
+                  ></a>
+                  <div id="projectsub" class="groupItem collapse">
+                    <a href="./allProject.html">Architecture</a><br />
+                    <a href="./allProject.html">furniture</a>
+                  </div>
+                </div>
+                <div class="item">
+                  <a href="./album.html">Album</a>
+                </div>
+                <div class="item">
+                  <a href="#">Contact</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <img
+        class="bg-logo"
+        src="./imgs/logo.png"
+        alt="Architecture Interior Design"
+        draggable="false"
+      />
+    </header>
+
+    <section class="sestion-slider">
+      <div class="sestion-slider__nav">
+        <div class="sestion-slider__prev"></div>
+        <div class="sestion-slider__next"></div>
+      </div>
+      <div id="slider1" class="owl-carousel owl-theme">
+        <!-- <div class="item" style="background-image: url(./imgs/001.jpg);">
+          <div class="item__background">
+            <div class="container">
+              <h1>modern hotel in HCM</h1>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia
+                alias, ab qui corrupti, voluptatem totam nam laborum iure,
+                recusandae porro repellat! Enim tempora delectus voluptatem sit
+                expedita asperiores necessitatibus ipsam!
+              </p>
+              <button>read more</button>
+            </div>
+          </div>
+        </div>
+        <div class="item" style="background-image: url(./imgs/002.jpg);"></div>
+        <div class="item" style="background-image: url(./imgs/003.jpg);"></div>
+        <div class="item" style="background-image: url(./imgs/004.jpg);"></div> -->
+      </div>
+    </section>
+
+    <section class="about">
+      <h1 class="about__title wow fadeInDown">about<span>KNP</span></h1>
+      <div class="container">
+        <div class="about__bg ">about</div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="about__content wow fadeInLeft">
+              <h2>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum,
+                tenetur?
+              </h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Officia eveniet asperiores, consequatur ipsum non impedit.
+                Facilis ipsum, voluptas ex, magnam possimus adipisci quaerat ad
+                aliquam beatae nobis nesciunt fugit excepturi!
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="about__special">
+              <h2>Our specialization</h2>
+              <div>
+                <!-- <img src="./imgs/icon3.svg" alt="architecture design" /> -->
+                <svg
+                  viewBox="0 0 500 222"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    class="about_architecture"
+                    d="M156.446 4.05028L470.495 75.8331M470 76V216M159.5 3L159.5 214M157 211.5H468M163.382 49.0367L411.345 97.224M411 99V211M259 68V211M321 81V211M157.371 6.4564L22.4001 133.488M24 125L24 212M0 218H500"
+                    stroke="#C3073F"
+                    stroke-width="8"
+                  />
+                </svg>
+
+                <div>architecture</div>
+              </div>
+              <div>
+                <!-- <img src="./imgs/icon2.svg" alt="construction consulting" /> -->
+                <svg
+                  viewBox="0 0 569 293"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="about_int"
+                >
+                  <line
+                    x1="249.784"
+                    y1="4.42004"
+                    x2="566.784"
+                    y2="162.42"
+                    stroke="#C3073F"
+                    stroke-width="8"
+                  />
+                  <line
+                    x1="2.34366"
+                    y1="115.359"
+                    x2="246.344"
+                    y2="4.35905"
+                    stroke="#C3073F"
+                    stroke-width="8"
+                  />
+                  <line
+                    x1="76"
+                    y1="87"
+                    x2="76"
+                    y2="291"
+                    stroke="#C3073F"
+                    stroke-width="8"
+                  />
+                  <line
+                    x1="252"
+                    y1="10"
+                    x2="252"
+                    y2="171"
+                    stroke="#C3073F"
+                    stroke-width="4"
+                  />
+                  <line
+                    x1="401"
+                    y1="83"
+                    x2="401"
+                    y2="271"
+                    stroke="#C3073F"
+                    stroke-width="8"
+                  />
+                  <line
+                    x1="470"
+                    y1="118"
+                    x2="470"
+                    y2="271"
+                    stroke="#C3073F"
+                    stroke-width="4"
+                  />
+                  <line
+                    x1="72"
+                    y1="165"
+                    x2="397"
+                    y2="165"
+                    stroke="#C3073F"
+                    stroke-width="8"
+                  />
+                  <line
+                    x1="39"
+                    y1="289"
+                    x2="315"
+                    y2="289"
+                    stroke="#C3073F"
+                    stroke-width="8"
+                  />
+                  <line
+                    x1="317"
+                    y1="169"
+                    x2="317"
+                    y2="293"
+                    stroke="#C3073F"
+                    stroke-width="4"
+                  />
+                  <line
+                    x1="315"
+                    y1="265"
+                    x2="498"
+                    y2="265"
+                    stroke="#C3073F"
+                    stroke-width="8"
+                  />
+                </svg>
+
+                <div>interiors</div>
+              </div>
+              <div>
+                <!-- <img src="./imgs/icon1.svg" alt="managment" /> -->
+                <svg
+                  viewBox="0 0 500 222"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M156.446 4.05028L470.495 75.8331M470 76V216M159.5 3L159.5 214M157 211.5H468M163.382 49.0367L411.345 97.224M411 99V211M259 68V211M321 81V211M157.371 6.4564L22.4001 133.488M24 125L24 212M0 218H500"
+                    stroke="#C3073F"
+                    stroke-width="8"
+                    class="about_planing"
+                  />
+                </svg>
+                <div>planing</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 wow fadeInRight">
+            <div class="about__img ">
+              <img src="./imgs/house.jpg" alt="managment" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="project">
+      <h1 class="project__title wow bounceIn">Our<span>project</span></h1>
+      <div class="container-fluid">
+        <div class="project__nav">
+          <div class="project__prev"></div>
+          <div class="project__next"></div>
+        </div>
+        <div class="row">
+          <div id="carouselProject" class="owl-carousel owl-theme">
+            <!-- <div class="item">
+              <div
+                class="item__img"
+                style="background-image: url('./imgs/house.jpg')"
+              ></div>
+              <div class="item__background">
+                <h3>Lorem ipsum dolor sit</h3>
+                <h4>Architecture</h4>
+                <div class="item__more">
+                  <i class="fas fa-plus-circle"></i>
+                </div>
+              </div>
+            </div>
+            <div class="item"><h4>2</h4></div>
+            <div class="item"><h4>3</h4></div>
+            <div class="item"><h4>4</h4></div>
+            <div class="item"><h4>5</h4></div>
+            <div class="item"><h4>6</h4></div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience">
+      <div class="container">
+        <div class="experience__bg">experience</div>
+        <div class="row ">
+          <div class="experience__gb-number wow lightSpeedIn">
+            <div class="experience__number">12</div>
+          </div>
+          <div class="experience__content wow lightSpeedIn">
+            <h2>YEARS OF SUCCESSFUL WORK</h2>
+            IN THE MARKET
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="client">
+      <h1 class="client__title wow bounceIn">Our<span>client</span></h1>
+      <div class="container">
+        <div class="client__bg">client</div>
+        <div class="row">
+          <div class="item">
+            <img
+              src="./imgs/logo_client/A.S.S._Trade_UG.svg"
+              alt="A.S.S._Trade_UG_logo"
+              srcset=""
+            />
+          </div>
+          <div class="item">
+            <img
+              src="./imgs/logo_client/Aban_Logo.svg"
+              alt="Aban_Logo"
+              srcset=""
+            />
+          </div>
+          <div class="item">
+            <img
+              src="./imgs/logo_client/MobiSystems_logo.svg"
+              alt="MobiSystems_logo"
+              srcset=""
+            />
+          </div>
+          <div class="item">
+            <img
+              src="./imgs/logo_client/ASI_Solutions_Logo.svg"
+              alt="ASI_Solutions_Logo"
+              srcset=""
+            />
+          </div>
+          <div class="item">
+            <img
+              src="./imgs/logo_client/Austal_logo.svg"
+              alt="Austal_logo"
+              srcset=""
+            />
+          </div>
+          <div class="item">
+            <img
+              src="./imgs/logo_client/Bassetti_Architects_logo.svg"
+              alt="Bassetti_Architects_logo"
+              srcset=""
+            />
+          </div>
+          <div class="item">
+            <img
+              src="./imgs/logo_client/Caldor_logo.svg"
+              alt="Caldor_logo"
+              srcset=""
+            />
+          </div>
+          <div class="item">
+            <img
+              src="./imgs/logo_client/Kiesel_Logo.svg"
+              alt="Kiesel_Logo"
+              srcset=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h1 class="contact__title wow bounceIn">get<span>in touch</span></h1>
+      <div class="container">
+        <div class="contact__bg ">contact</div>
+        <div class="row">
+          <div class="col-md-4 contact__info wow bounceInLeft">
+            <p><i class="fas fa-phone"></i> +84 91 379 5689</p>
+            <p><i class="fas fa-phone"></i>+84 76 789 0456</p>
+            <p><i class="fas fa-envelope"></i>info@khainguyen.com</p>
+            <p>
+              <i class="fas fa-map-marker-alt"></i>24 Xa lộ Hà Nội, P.Thảo Điền,
+              Q.2, TP.Hồ Chí Minh
+            </p>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6 col-lg-4">
+                <div class="group wow flipInX">
+                  <input
+                    type="text"
+                    name="name"
+                    id="ipName"
+                    placeholder="Name"
+                  />
+                </div>
+                <div class="group wow flipInX">
+                  <input
+                    type="email"
+                    name="email"
+                    id="ipEmail"
+                    placeholder="Email address*"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="group wow flipInX">
+                  <input
+                    type="tel"
+                    name="phone"
+                    id="ipPhone"
+                    placeholder="Phone"
+                  />
+                </div>
+                <div class="group wow flipInX">
+                  <input
+                    type="text"
+                    name="company"
+                    id="ipCom "
+                    placeholder="Company"
+                  />
+                </div>
+              </div>
+              <div class="col-md-12 col-lg-4">
+                <div class="group wow flipInX">
+                  <textarea
+                    name="mes"
+                    id="ipMes"
+                    cols="30"
+                    rows="10"
+                    placeholder="Message"
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div
+                class="col-md-12 d-flex justify-content-center justify-content-md-end"
+              >
+                <button class="wow jackInTheBox">
+                  send <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/g77WfQ-blxI"
+      frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe> -->
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-md-12 d-flex justify-content-between align-items-center py-3"
+          >
+            <img src="./imgs/log_knp_red.png" alt="" srcset="" />
+            <span>@KNP 2019. All Rights Reserved.</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- OWL CAROUSEL JS -->
+    <script src="./js/owl.carousel.js"></script>
+    <!-- WOW JS -->
+    <script src="./js/wow.js"></script>
+    <!-- MAIN JS -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
